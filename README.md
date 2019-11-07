@@ -20,5 +20,5 @@ Training Data:
 Test Data:
 
 | Loan_ID | Gender | Married | Dependents | Education | Self_Employed | ApplicantIncome | CoapplicantIncome | LoanAmount | Loan_Amount_Term | Credit_History | Property_Area |
-| ------- | ------ | ------- | ---------- | --------- | ------------- | --------------- | ----------------- | ---------- | ---------------- | -------------- | ------------- | ----------- |
+| ------- | ------ | ------- | ---------- | --------- | ------------- | --------------- | ----------------- | ---------- | ---------------- | -------------- | ------------- |
 | LP001015 | Male   | No     | 0           | Graduate | No             | 5720           | 0                 | 110        | 360              | 1              | Urban         | 
