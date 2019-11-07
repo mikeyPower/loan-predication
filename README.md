@@ -43,4 +43,4 @@ Test Data:
 
 Which Fields to pick?
 
-Inorder to understand which fields give a greater indication as to whether or not a loan will be approved. It is important to look at the data from multiple angles
+Inorder to understand which fields give a greater indication as to whether or not a loan will be approved. It is important to look at the data from multiple angles. Of the 13 fields available I looked at all fields except Loan_ID and Loan Status to build my model. While not all these fields give a strong indication as to whether or not a loan woould be approve it does help see how certain fields can sway the model.
