@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
@@ -10,14 +11,41 @@ import matplotlib.pyplot as plt
 train = sys.argv[1]
 test = sys.argv[2]
 
-# Training Data
+# Some Investigation
 
 df = pd.read_csv(train)
 sn.countplot('Married', hue='Loan_Status', data=df)
 plt.show()
-plt.savefig("output.png")
+plt.savefig("output_married.png")
+plt.clf()
+sn.countplot('Education', hue='Loan_Status', data=df)
+plt.show()
+plt.savefig("output_education.png")
+plt.clf()
+sn.countplot('Property_Area', hue='Loan_Status', data=df)
+plt.show()
+plt.savefig("output_property_area.png")
+plt.clf()
+sn.countplot('Self_Employed', hue='Loan_Status', data=df)
+plt.show()
+plt.savefig("output_self_employed.png")
+plt.clf()
+sn.countplot('Credit_History', hue='Loan_Status', data=df)
+plt.show()
+plt.savefig("output_credit_history.png")
+plt.clf()
+sn.distplot(df['ApplicantIncome'],label='ApplicantIncome')
+#sn.distplot(df['CoapplicantIncome'],label='CoapplicantIncome')
+plt.savefig("output_applicant_income.png")
+plt.clf()
+
+print(df.groupby("ApplicantIncome").mean())
+# Replace all empty spaces
 
 df.fillna(-1,inplace=True)
+
+# Need to convert options to numbers
+
 df.Loan_Status.replace(('Y', 'N'), (1, 0), inplace=True)
 df.Gender.replace(("Male","Female"),(1,0),inplace=True)
 df.Married.replace(("Yes","No"),(1,0),inplace=True)
@@ -64,9 +92,25 @@ y_pred=logistic_regression.predict(X_test)
 
 print(classification_report(y_test,y_pred))
 print(confusion_matrix(y_test, y_pred))
+
+# ( TP + TN ) / Total
+
 print(accuracy_score(y_test,y_pred))
+
+# ( FP + FN ) / Total
+
+print(1-accuracy_score(y_test,y_pred))
+
+# visualize the prediction model
+
+sn.heatmap(pd.DataFrame(confusion_matrix(y_test, y_pred)))
+plt.show()
+plt.savefig("heatmap.png")
+
 
 # Predicting the outcome of our test data using above model
 
 y_pred2 = logistic_regression.predict(testing_data)
 print(y_pred2)
+print("Number of loans approved: ",np.sum(y_pred2))
+print("Number of loans not approved: ",len(y_pred2)-np.sum(y_pred2))
