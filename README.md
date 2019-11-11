@@ -50,6 +50,6 @@ Inorder to understand which fields give a greater indication as to whether or no
 ![Applicant Income](https://github.com/mikeyPower/loan-predication/blob/master/explore/output_applicant_income.png)
 ![Credit History](https://github.com/mikeyPower/loan-predication/blob/master/explore/output_credit_history.png)
 ![Education](https://github.com/mikeyPower/loan-predication/blob/master/explore/output_education.png)
-![Married](https://github.com/mikeyPower/loan-predication/blob/master/explor/output_married.png)
+![Married](https://github.com/mikeyPower/loan-predication/blob/master/explore/output_married.png)
 ![Property Area](https://github.com/mikeyPower/loan-predication/blob/master/explore/output_property_area.png)
 ![Self Employed](https://github.com/mikeyPower/loan-predication/blob/master/explore/output_self_employed.png)
