@@ -47,9 +47,9 @@ Inorder to understand which fields give a greater indication as to whether or no
 
 ## Exploration.
 
-![Applicant Income](explore/outuput_applicant_income.png)
-![Credit History](explore/outuput_credit_history.png)
-![Education](explore/outuput_education.png)
-![Married](explore/outuput_married.png)
-![Property Area](explore/outuput_property_area.png)
-![Self Employed](explore/outuput_self_employed.png)
+![Applicant Income](https://github.com/mikeyPower/loan-predication/blob/master/explore/explore/outuput_applicant_income.png)
+![Credit History](https://github.com/mikeyPower/loan-predication/blob/master/explore/explore/outuput_credit_history.png)
+![Education](https://github.com/mikeyPower/loan-predication/blob/master/explore/explore/outuput_education.png)
+![Married](https://github.com/mikeyPower/loan-predication/blob/master/explore/explore/outuput_married.png)
+![Property Area](https://github.com/mikeyPower/loan-predication/blob/master/explore/explore/outuput_property_area.png)
+![Self Employed](https://github.com/mikeyPower/loan-predication/blob/master/explore/explore/outuput_self_employed.png)
