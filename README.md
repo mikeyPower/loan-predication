@@ -45,6 +45,11 @@ Which Fields to pick?
 
 Inorder to understand which fields give a greater indication as to whether or not a loan will be approved. It is important to look at the data from multiple angles. Of the 13 fields available I looked at all fields except Loan_ID and Loan Status to build my model. While not all these fields give a strong indication as to whether or not a loan woould be approved it does help see how certain fields can sway the overall model.
 
-Exploration.
+## Exploration.
 
-
+![Applicant Income](explore/outuput_applicant_income.png)
+![Credit History](explore/outuput_credit_history.png)
+![Education](explore/outuput_education.png)
+![Married](explore/outuput_married.png)
+![Property Area](explore/outuput_property_area.png)
+![Self Employed](explore/outuput_self_employed.png)
