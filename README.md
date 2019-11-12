@@ -53,3 +53,30 @@ Inorder to understand which fields give a greater indication as to whether or no
 ![Married](https://github.com/mikeyPower/loan-predication/blob/master/explore/output_married.png)
 ![Property Area](https://github.com/mikeyPower/loan-predication/blob/master/explore/output_property_area.png)
 ![Self Employed](https://github.com/mikeyPower/loan-predication/blob/master/explore/output_self_employed.png)
+
+## Understanding The Classification Report
+
+**Precision**
+Precision is the ability of a classiifer not to label an instance positive that is actually negative. For each class it is defined as as the ratio of true positives to the sum of true and false positives. Said another way, “for all instances classified positive, what percent was correct?”
+
+Precision – Accuracy of positive predictions.
+Precision = TP/(TP + FP)
+
+**Recall**
+Recall is the ability of a classifier to find all positive instances. For each class it is defined as the ratio of true positives to the sum of true positives and false negatives. Said another way, “for all instances that were actually positive, what percent was classified correctly?”
+
+Recall: Fraction of positives that were correctly identified.
+Recall = TP/(TP+FN)
+
+**f1 score**
+The F1 score is a weighted harmonic mean of precision and recall such that the best score is 1.0 and the worst is 0.0. Generally speaking, F1 scores are lower than accuracy measures as they embed precision and recall into their computation. As a rule of thumb, the weighted average of F1 should be used to compare classifier models, not global accuracy.
+
+F1 Score = 2*(Recall * Precision) / (Recall + Precision)
+
+**Support**
+Support is the number of actual occurrences of the class in the specified dataset. Imbalanced support in the training data may indicate structural weaknesses in the reported scores of the classifier and could indicate the need for stratified sampling or rebalancing. Support doesn’t change between models but instead diagnoses the evaluation process.
+
+## Understanding the Confusion Matrix
+
+## References
+https://www.scikit-yb.org/en/latest/api/classifier/classification_report.html
