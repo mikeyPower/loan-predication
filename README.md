@@ -78,5 +78,10 @@ Support is the number of actual occurrences of the class in the specified datase
 
 ## Understanding the Confusion Matrix
 
+|   |  Predicted No | Predicted Yes |
+|---|---|---|
+| Actually No | 9  | 34  |
+|  Actually Yes |  10 | 101  |
+
 ## References
 https://www.scikit-yb.org/en/latest/api/classifier/classification_report.html
