@@ -83,12 +83,15 @@ Support is the number of actual occurrences of the class in the specified datase
 | Actually No | TN = 9  | FP = 34  |
 |  Actually Yes |  FN = 10 | TP = 101  |
 
-true positives (TP): These are cases in which we predicted yes (they got the loan approved), and they do have the loan approved.
-true negatives (TN): We predicted no, and they don't have the loan approved.
-false positives (FP): We predicted yes, but they don't actually have the loan approved. (Also known as a "Type I error.")
-false negatives (FN): We predicted no, but they actually do have the loan approved. (Also known as a "Type II error.")
+* true positives (TP): These are cases in which we predicted yes (they got the loan approved), and they do have the loan approved.
+
+* true negatives (TN): We predicted no, and they don't have the loan approved.
+
+* false positives (FP): We predicted yes, but they don't actually have the loan approved. (Also known as a "Type I error.")
+
+* false negatives (FN): We predicted no, but they actually do have the loan approved. (Also known as a "Type II error.")
 
 ## References
-https://www.scikit-yb.org/en/latest/api/classifier/classification_report.html
-https://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
-https://datascienceplus.com/logistic-regression-with-python/
+1. [Classification Report](https://www.scikit-yb.org/en/latest/api/classifier/classification_report.html)
+2. [Confusion Matrix](https://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/)
+3. [Logistic Regression](https://datascienceplus.com/logistic-regression-with-python/)
