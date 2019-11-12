@@ -1,7 +1,7 @@
 # loan-predication
 
 ## Prerequisite
-    ./install.sh requirements.txt
+    ./install.sh
     
 ## Run
     python loan.py <test_data> <train_data>
